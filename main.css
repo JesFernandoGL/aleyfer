@@ -18,6 +18,7 @@
 
 body{
     background-color: var(--fondo);
+    overflow-x: hidden;
 }
 .inicio .img-inicio{
     background-image: url(img/img7.jpg);
@@ -34,6 +35,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .corazon{
@@ -83,7 +85,6 @@ body{
 }
 
 .punto{
-    background-color: var(--azul);
     width: 60px;
     height: 60px;
     border-radius: 30px;
@@ -92,40 +93,61 @@ body{
 
 .pt1{
     transform: translateY(0) translateX(-20px);
+    background-color: rgb(98, 31, 143);
 }
 
 .pt2{
-    transform: translateY(200px) translateX(-20px);
+    transform: translateY(300px) translateX(-20px);
     background-color: rgb(117, 24, 117);
 }
 
 .pt3{
-    transform: translateY(400px) translateX(-20px);
+    transform: translateY(600px) translateX(-20px);
     background-color: rgb(16, 90, 133);
 }
 
 .pt4{
-    transform: translateY(600px) translateX(-20px);
+    transform: translateY(900px) translateX(-20px);
     background-color: rgb(106, 16, 133);
 }
 
 .pt5{
-    transform: translateY(800px) translateX(-20px);
+    transform: translateY(1200px) translateX(-20px);
     background-color: rgb(90, 16, 133);
 }
 
 .pt6{
-    transform: translateY(1000px) translateX(-20px);
+    transform: translateY(1500px) translateX(-20px);
     background-color: rgb(51, 16, 133);
 }
 
 .pt7{
-    transform: translateY(1200px) translateX(-20px);
+    transform: translateY(1800px) translateX(-20px);
     background-color: rgb(68, 23, 153);
 }
 
 .pt8{
-    transform: translateY(1400px) translateX(-20px);
+    transform: translateY(2100px) translateX(-20px);
+    background-color: rgb(37, 16, 133);
+}
+
+.pt9{
+    transform: translateY(2400px) translateX(-20px);
+    background-color: rgb(51, 16, 133);
+}
+
+.pt10{
+    transform: translateY(2700px) translateX(-20px);
+    background-color: rgb(68, 23, 153);
+}
+
+.pt11{
+    transform: translateY(3000px) translateX(-20px);
+    background-color: rgb(37, 16, 133);
+}
+
+.pt12s{
+    transform: translateY(3300px) translateX(-20px);
     background-color: rgb(37, 16, 133);
 }
 
@@ -134,11 +156,11 @@ body{
     padding: 20px;
     max-width: 850px;
     margin: auto;
-    z-index: 10;   
 }
 
 .seccion .cont-izquierdo{
     width: 50%;
+    z-index: 10;
 }
 
 .seccion .cont-derecho{
@@ -211,6 +233,6 @@ body{
 }
 
 .final h2{
+
     text-align: center;
-    font-family: 'lobster';
 }
