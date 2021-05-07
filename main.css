@@ -5,13 +5,14 @@
     --deginicio: linear-gradient(to bottom, rgba(123, 44, 214, 0.747), rgba(50, 89, 216, 0.74));
     --deglinea: linear-gradient(to bottom, rgb(123, 44, 214), rgb(50, 89, 216));
     --morado: rgb(94, 30, 212);
+    --verde: rgb(38, 202, 167);
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -35,17 +36,38 @@ body{
     align-items: center;
 }
 
+.corazon{
+    width: 80px;
+    position: absolute;
+}
+
+.corazon.c1{
+    bottom: 5%;
+    left: 20%;
+    transform: rotate(-30deg);
+}
+
+.corazon.c2{
+    bottom: 8%;
+    right: 20%;
+}
+
+
+
 .inicio .contenedor-titulo{
     color: var(--blanco);
     text-align: center;
+    z-index: 10;
+    opacity: 100%;
 }
 
 .inicio .contenedor-titulo h1{
-    font-size: 80px;
+    font-size: 40px;
+    font-family: 'lobster', sans-serif;
 }
 
 .inicio .contenedor-titulo h2{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .linea{
@@ -56,6 +78,7 @@ body{
     position: absolute;
     top: 800px;
     right: calc(50% - 10px);
+    z-index: -10;
 
 }
 
@@ -64,6 +87,7 @@ body{
     width: 60px;
     height: 60px;
     border-radius: 30px;
+    z-index: -10;
 }
 
 .pt1{
@@ -72,7 +96,7 @@ body{
 
 .pt2{
     transform: translateY(200px) translateX(-20px);
-    background-color: violet;
+    background-color: rgb(117, 24, 117);
 }
 
 .pt3{
@@ -90,11 +114,27 @@ body{
     background-color: rgb(90, 16, 133);
 }
 
+.pt6{
+    transform: translateY(1000px) translateX(-20px);
+    background-color: rgb(51, 16, 133);
+}
+
+.pt7{
+    transform: translateY(1200px) translateX(-20px);
+    background-color: rgb(68, 23, 153);
+}
+
+.pt8{
+    transform: translateY(1400px) translateX(-20px);
+    background-color: rgb(37, 16, 133);
+}
+
 .seccion{
     display: flex;
     padding: 20px;
     max-width: 850px;
-    margin: auto;   
+    margin: auto;
+    z-index: 10;   
 }
 
 .seccion .cont-izquierdo{
@@ -141,6 +181,15 @@ body{
     text-align: center;
     color: var(--blanco);
     transition: opacity 1s ease;
+}
+
+.sec-texto h2{
+    color: var(--verde);
+}
+
+.sec-texto .fecha-evento span{
+    color: var(--verde);
+    font-weight: bold;
 }
 
 
